@@ -1,0 +1,2 @@
+class VhsController < ApplicationController
+end

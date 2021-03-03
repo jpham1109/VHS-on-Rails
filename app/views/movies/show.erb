@@ -1,0 +1,21 @@
+<h1> Movie's Information </h1>
+<main>
+<hr>
+  <ul>
+  <li><b> Name: </b><%= @movie.title %>, <%= @movie.year %></li>
+  <li><b> Length: </b><%= @movie.length %> minutes</li>
+  <li><b> Director: </b><%= @movie.director %></li>
+  <li><b> Description: </b><%= @movie.description %></li>
+  <li><b> Female director: </b><%= @movie.female_director %></li>
+  </ul>
+  <p><b> Vhs copies: </b><%= @vhs.size %>
+    <ul><% @vhs.each do |v| %>
+      <li><%= v.serial_number %></li>
+    <% end %>
+    </ul>
+  <p><b> Vhs available: </b><% @vhs.each do |v| %>
+      <%= v.available_to_rent %>      
+      <% end %> 
+  </p>
+  <p><%= link_to "All movies", movies_path %></p>
+</main>

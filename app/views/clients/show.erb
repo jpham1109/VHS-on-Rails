@@ -1,0 +1,13 @@
+<h1> Client's Profile </h1>
+<main>
+<hr>
+  <p><b> Name: </b><%= @client.name %></p>
+  <p><b> Address: </b><%= @client.home_address %></p>
+  <p><b> Rentals: </b>
+    <ol>
+      <% @rentals.each do |rental| %>
+        <li><%= link_to rental.vhs.movie_from_id.title, movie_path(rental.movie_from_vhs) %></li>
+      <% end %> 
+    </ol>
+  </p>
+</main>

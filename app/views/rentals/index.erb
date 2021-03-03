@@ -1,0 +1,9 @@
+<h1>All Rentals</h1>
+<main>
+
+    <ol>
+        <% @rentals.each do |rental| %>
+            <li><%= link_to rental.vhs.movie_from_id, rental %>, Rented: <%= rental.current %></li>
+        <% end  %>
+    </ol>
+</main>

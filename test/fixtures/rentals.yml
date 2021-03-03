@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  current: false
+  client: one
+  vhs: one
+
+two:
+  current: false
+  client: two
+  vhs: two

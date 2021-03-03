@@ -1,0 +1,9 @@
+<h1>All Movies</h1>
+<main>
+
+    <ol>
+        <% @movies.each do |movie| %>
+            <li><%= link_to movie.title, movie %>, <em> Year: </em><%= movie.year %></li>
+        <% end  %>
+    </ol>
+</main>
